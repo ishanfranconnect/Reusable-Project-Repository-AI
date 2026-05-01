@@ -53,6 +53,32 @@ body {
 .header p {
   color: #94a3b8;
   font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.mode-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mode-toggle button {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #94a3b8;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.mode-toggle button.active {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
 
 .prompt-container {
@@ -141,4 +167,71 @@ pre {
   padding: 0.75rem;
   border-radius: 0.5rem;
   border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+/* Search Gallery Styles */
+.search-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.project-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: #f1f5f9;
+    font-size: 1.1rem;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 600;
 }

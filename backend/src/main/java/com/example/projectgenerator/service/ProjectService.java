@@ -5,6 +5,7 @@ import com.example.projectgenerator.repository.ProjectRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -34,6 +35,11 @@ public class ProjectService {
         
         // 3. Save to database
         return projectRepository.save(newProject);
+    }
+
+    @Transactional(readOnly = true)
+    public List<Project> searchProject(String keyword) {
+        return projectRepository.findByPromptContainingIgnoreCase(keyword);
     }
 
     private String generateMockSolution(String prompt) {
