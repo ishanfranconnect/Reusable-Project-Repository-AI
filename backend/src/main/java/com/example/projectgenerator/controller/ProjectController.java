@@ -28,8 +28,7 @@ public class ProjectController {
 
     @PostMapping("/generate")
     public ResponseEntity<Project> generateProject(@RequestBody String prompt) {
-        // Placeholder logic
-        Project project = new Project(prompt, "Generated solution placeholder");
-        return ResponseEntity.ok(project);
+        Project result = projectService.processPrompt(prompt);
+        return ResponseEntity.ok(result);
     }
 }
