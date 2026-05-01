@@ -1,0 +1,6 @@
+/Users/ishananand/Reusable-Project-Repository-AI/backend/src/main/java/com/example/projectgenerator/ProjectGeneratorApplication.java
+/Users/ishananand/Reusable-Project-Repository-AI/backend/src/main/java/com/example/projectgenerator/model/Project.java
+/Users/ishananand/Reusable-Project-Repository-AI/backend/src/main/java/com/example/projectgenerator/controller/ProjectController.java
+/Users/ishananand/Reusable-Project-Repository-AI/backend/src/main/java/com/example/projectgenerator/service/ProjectService.java
+/Users/ishananand/Reusable-Project-Repository-AI/backend/src/main/java/com/example/projectgenerator/repository/ProjectRepository.java
+/Users/ishananand/Reusable-Project-Repository-AI/backend/src/main/java/com/example/projectgenerator/config/CorsConfig.java

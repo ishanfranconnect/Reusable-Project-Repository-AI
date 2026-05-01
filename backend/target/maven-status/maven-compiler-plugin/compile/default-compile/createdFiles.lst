@@ -1,0 +1,6 @@
+com/example/projectgenerator/repository/ProjectRepository.class
+com/example/projectgenerator/model/Project.class
+com/example/projectgenerator/controller/ProjectController.class
+com/example/projectgenerator/service/ProjectService.class
+com/example/projectgenerator/config/CorsConfig.class
+com/example/projectgenerator/ProjectGeneratorApplication.class
